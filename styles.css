@@ -1,0 +1,215 @@
+body{
+    background-color: #BAA898;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 250px; 
+    background-color: #EFC69B;
+    color:black;
+    border-style: ridge;
+    border-width: 5px;
+    border-color:black;
+    margin: 10px auto 10px auto;
+    box-shadow: 5px 5px rgba(101, 92, 77, 0.995);
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto 10px auto;
+}
+
+.menu button{
+    width: 150px;
+    height: 150px;
+    color: black;
+    text-shadow: 3px 3px black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 20px;
+    margin: 5px 10px 5px 10px;
+    border-style: outset; 
+    border-width: 5px;
+
+}
+
+.coffeeOrder{
+    background-image: url(coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cappOrder{
+    background-image: url(capp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.espressoOrder{
+    background-image: url(espresso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.latteOrder{
+    background-image: url(latte.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.menu button:focus{
+    border-style: inset; 
+    border-width: 8px;}
+
+.menu .image{
+    width: 100px;
+    height: 100px;
+    border-style: outset; 
+}
+.menu h3{
+    color:black;
+    margin: 0 auto 0 auto;
+}
+
+.placeOrder{
+    display: flex;
+    width: 96%;
+    height: 150px; 
+    background-color: #F6DFC8;
+    color:black;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: black;
+    margin: 10px auto 10px auto;
+}
+
+.currentOrders{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 400px;
+    margin: auto auto 10px auto;
+    background-color: #EFC69B;
+    color:black;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: black;
+}
+
+
+.currentOrders h3{
+    color:black;
+    margin: 0 auto 0 auto;
+}
+
+.btnRow{
+    display: Flex;
+    flex-direction: row;
+    margin: auto;
+}
+.searchbtn{
+    width:150px;
+    height: 30px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.allhbtn{
+    width:150px;
+    height: 30px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+.displayBox{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    border-style: ridge;
+    color: moccasin;
+    border-width: 5px 0px 0px 0px;
+    border-color: black;
+}
+
+.displayOrder{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-shadow: 2px 2px rgb(247, 247, 247) ;
+    text-emphasis-style: filled;
+    /* margin: 10 10 10 10;
+    padding: 20 5 20 5; */
+    font-size: 28px;
+    margin: 1rem;
+    padding: 3rem;
+    border-style: ridge;
+    color: blue;
+    border-width: 5px;
+    border-color: black;
+    background-image: url(coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+}
+
+.displayOrder .textForm{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(186, 168, 152, 0.50);
+    border-radius: 10%;   
+}
+
+.hidding{
+    display:none;
+}
+
+.dialog {
+    height: 100px;
+    text-align: center;
+    background-color: rgb(240, 121, 16);
+    border-width: 8px;
+    border-style: double;
+    border-radius: 10%;
+
+}
+
+
+.searchbox{
+    display: block;
+    width: 275px;
+    margin: 20px auto 15px auto;
+}
+
+.find{
+    display: block;
+    margin: auto;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    width: 50px;
+    top: 80%;
+    left: 80%;
+    width: 50px;
+    padding: 1px;
+    height: 20px;
+}

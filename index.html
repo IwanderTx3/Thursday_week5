@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Coffee Time!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+
+</head>
+<body >
+    <div id="menu" class="menu">
+            <h3>Menu</h3>
+            <UL>
+        <button id='coffeeOrder' class='coffeeOrder'> Coffee</button>
+        <button id='cappOrder' class='cappOrder'> Cappuccino</button>
+        <button id='espressoOrder' class='espressoOrder'> Espresso</button>
+        <button id='latteOrder' class='latteOrder'> Latte</button>
+        <button id='mochaOrder' class='mochaOrder'> Mocha</button>
+        <button id='specialOrder' class='specialOrder'> Special</button>
+            </UL>
+    </div>  
+    <div id="placeOrder" class="placeOrder">
+
+    </div>
+    <div id="currentOrders" class="currentOrders"> 
+        <h3>Current Coffee Orders</h3> 
+        <div id="btnRow" class="btnRow">
+        <button id="searchbtn" class="searchbtn">Search Orders</button>
+        <button id="allbtn" class="allbtn"> Show all Orders</button>
+        </div>
+        <div id="displayBox" class="displayBox">
+    </div>
+    <div id="hidding" class="hidding">
+        <div id="dialog" class="dialog">
+                <form action="searchCall" id="searchCall">
+                    <Input class="searchBox" id="searchBox" type="text" placeholder="Enter the e-mail address of the order"></Input>
+                    <button class="find"> Find the order </button>
+                </form>
+        </div>    
+    </div>
+
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="site.js"></script>
+</html>
