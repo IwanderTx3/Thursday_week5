@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 96%;
-    height: 250px; 
+    height: 300px; 
     background-color: #EFC69B;
     color:black;
     border-style: ridge;
@@ -19,16 +19,30 @@ body{
 .menu ul{
     display: flex;
     flex-direction: row;
-    margin: 10px auto 10px auto;
+    -webkit-padding-start: 0px;
+    margin: 10 auto 10 auto;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 18%;
+    border-style: solid;
+    border-color: black;
+}
+
+.menu .sizeBtn{
+    height: 20px;
+    width : 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .menu button{
-    width: 150px;
-    height: 150px;
-    color: black;
-    text-shadow: 3px 3px black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+    width: 15%;
+    height: auto;
+    
     font-size: 20px;
     margin: 5px 10px 5px 10px;
     border-style: outset; 
@@ -64,6 +78,39 @@ body{
     background-position: center;
 }
 
+.mochaOrder{
+    background-image: url(mocha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.chiOrder{
+    background-image: url(chi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.specialOrder{
+    background-image: url(empty.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+h1{
+    background-color: rgba(0, 0, 0, 0.502);
+    color: #EFC69B;
+    text-shadow: 3px 3px gray;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 20px;
+    border-radius: 25%
+}
+
 
 .menu button:focus{
     border-style: inset; 
@@ -75,27 +122,239 @@ body{
     border-style: outset; 
 }
 .menu h3{
+    font-size: 30PX;
     color:black;
     margin: 0 auto 0 auto;
 }
 
 .placeOrder{
     display: flex;
+    flex-direction: column;
     width: 96%;
-    height: 150px; 
+    height: 75px; 
     background-color: #F6DFC8;
     color:black;
     border-style: ridge;
     border-width: 5px;
     border-color: black;
     margin: 10px auto 10px auto;
+    font-size: 22px;
+    
 }
+
+.reviewOrdered{
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto 10px auto;
+    width: 800px;
+    height: 50px;
+    border-style: solid; 
+    
+}
+
+.customerName label{
+    margin: 10px auto 10px auto;
+
+    
+}
+
+.customerName{
+    display: none;
+    flex-direction: row;
+    margin: 10px auto 10px auto;
+    width: 800px;
+    height: 50px;
+    border-style: solid; 
+   
+}
+
+.itemOrdered{
+    background-color: white;
+    border-style: inset;
+    padding-left: 5px;
+    height: 20px;
+    width: 200px;
+    margin: auto 10px auto 10px;
+    padding-left: 15px;
+}
+
+
+
+.custNameInput{
+    background-color: pink;
+    border-style: inset;
+    height: 20px;
+    width: 200px;
+    margin: auto 10px auto 0px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 15px;
+}
+
+.custNameInput{
+    display: flex;
+    background-color: white;
+    border-style: inset;
+    height: 20px;
+    width: 200px;
+    margin: auto 10px auto 10px;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 15px;
+}
+
+.sizeOrdered{
+    background-color: white;
+    border-style: inset;
+    height: 20px;
+    width: 200px;
+    margin: auto 10px auto 10px;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 15px;
+}
+
+.specialOrdered{
+    background-color: white;
+    border-style: inset;
+    height: 20px;
+    width: 200px;
+    margin: auto 10px auto 10px;
+    padding-left: 15px;
+}
+
+.sizeSelect {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin: auto auto auto 20px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.sizeSelect input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    border-style: outset;
+}
+.sizeSelect input:checked ~ .checkmark {
+    background-color:#7DAAD7;
+    border-style: inset;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sizeSelect input:checked ~ .checkmark:after {
+    background-color:#7DAAD7;
+    border-style: inset;
+}
+
+.orderRequest{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 18%;
+    border-style: solid;
+    border-color: black;
+}
+
+.orderRequested{
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        padding-right: 10px;
+        margin: auto auto auto 20px;
+        cursor: pointer;
+        font-size: 22px;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+}
+
+.orderRequested input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.orderRequested input:checked ~ .specialcheckmark {
+    background-color:#7DAAD7;
+    border-style: inset;
+}
+
+.orderRequested .specialcheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.orderRequested .specialcheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.orderRequested input:checked ~ .specialcheckmark:after {
+    display: block;
+}
+
+.orderRequested .specialcheckmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
 
 .currentOrders{
     display: flex;
     flex-direction: column;
     width: 96%;
-    height: 400px;
+
     margin: auto auto 10px auto;
     background-color: #EFC69B;
     color:black;
@@ -104,17 +363,20 @@ body{
     border-color: black;
 }
 
-
 .currentOrders h3{
     color:black;
     margin: 0 auto 0 auto;
+    font-size: 30px;
 }
 
 .btnRow{
     display: Flex;
     flex-direction: row;
-    margin: auto;
+    height: 40px;
+    margin: 5 auto 5 auto;
+    padding: 5 0 5 0;
 }
+
 .searchbtn{
     width:150px;
     height: 30px;
@@ -123,17 +385,6 @@ body{
     border-color: black;
     border-style: solid;
     border-width: 2px;
-}
-
-.allhbtn{
-    width:150px;
-    height: 30px;
-    margin: 5px 10px 5px 10px;
-    border-radius: 10%;
-    border-color: black;
-    border-style: solid;
-    border-width: 2px;
-
 }
 
 .displayBox{
@@ -152,8 +403,6 @@ body{
     list-style: none;
     text-shadow: 2px 2px rgb(247, 247, 247) ;
     text-emphasis-style: filled;
-    /* margin: 10 10 10 10;
-    padding: 20 5 20 5; */
     font-size: 28px;
     margin: 1rem;
     padding: 3rem;
@@ -192,14 +441,13 @@ body{
 
 }
 
-
 .searchbox{
     display: block;
     width: 275px;
     margin: 20px auto 15px auto;
 }
 
-.find{
+.locate{
     display: block;
     margin: auto;
 }
@@ -213,3 +461,43 @@ body{
     padding: 1px;
     height: 20px;
 }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    padding-top: 350px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+
+.modal-content {
+    background-color: #fefefe;
+
+    margin: auto;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 25%;
+    border: 4px solid rgb(0, 0, 0);
+    width: 350px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;}

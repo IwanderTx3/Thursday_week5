@@ -9,31 +9,77 @@
     <div id="menu" class="menu">
             <h3>Menu</h3>
             <UL>
-        <button id='coffeeOrder' class='coffeeOrder'> Coffee</button>
-        <button id='cappOrder' class='cappOrder'> Cappuccino</button>
-        <button id='espressoOrder' class='espressoOrder'> Espresso</button>
-        <button id='latteOrder' class='latteOrder'> Latte</button>
-        <button id='mochaOrder' class='mochaOrder'> Mocha</button>
-        <button id='specialOrder' class='specialOrder'> Special</button>
+                <li id="size" class = "size">
+                    <label class="sizeSelect">Small
+                            <input class="radio_btn" type="radio"  name="radio" id="small" value="Small">
+                            <span class="checkmark"></span>
+                    </label>
+                    <label class="sizeSelect">Regular
+                            <input class="radio_btn" type="radio"  name="radio" id="regular" value="Regular">
+                            <span class="checkmark"></span>
+                    </label>
+                    <label class="sizeSelect">Large
+                            <input class="radio_btn" type="radio"  name="radio" id="large" value="Large">
+                            <span class="checkmark"></span>
+                    </label>
+                    <label class="sizeSelect">Extra Large
+                            <input class="radio_btn" type="radio"  name="radio" id="extraLarge" value="Extra Large">
+                            <span class="checkmark"></span>
+                    </label>
+                </li>
+                <button id='coffeeOrder' class='coffeeOrder'> <h1>Coffee</h1></button>
+                <button id='cappOrder' class='cappOrder'> <h1>Cappuccino</h1></button>
+                <button id='espressoOrder' class='espressoOrder'> <h1>Espresso</h1></button>
+                <button id='latteOrder' class='latteOrder'> <h1>Latte</h1></button>
+                <button id='mochaOrder' class='mochaOrder'> <h1>Mocha</h1></button>
+                <button id='chiOrder' class='chiOrder'> <h1>Chi Tea</h1></button>
+<!--                <button id='specialOrder' class='specialOrder'> <h1>Special</h1></button> -->
+                <li id="orderRequest" class = "orderRequest">
+                    <label class="orderRequested">Iced
+                            <input type="checkbox" checked="checked" id="iced" >
+                            <span class="specialcheckmark"></span>
+                    </label>
+                    <label class="orderRequested">Sweet
+                            <input type="checkbox" checked="checked" id="sweet" >
+                            <span class="specialcheckmark"></span>
+                    </label>
+                    <label class="orderRequested">Add Milk
+                            <input type="checkbox" checked="checked" id="milk" >
+                            <span class="specialcheckmark"></span>
+                    </label>
+<!--                    <label class="orderRequested">Special<input type="checkbox" checked="checked" id="special">
+                            <span class="specialcheckmark"></span>
+                    </label> -->               
+                </li>
             </UL>
     </div>  
     <div id="placeOrder" class="placeOrder">
+        <div id="reviewOrdered" class="reviewOrdered">
+            <div id="sizeOrdered" class="sizeOrdered"></div>
+            <div id="itemOrdered" class="itemOrdered"></div>
+            <div id="specialOrdered" class="specialOrdered"></div>
+            <button id="submitOrder" class="submitOrder">Submit Order</button>
+        </div>
+        <div id="customerName" class="customerName">
+                <label> Enter Customer name or e-mail</label> 
+                <input type="text" id="custNameInput" class="custNameInput">
 
+                <button calss="CustOrderBtn" id="CustOrderBtn">Order</button>
+        </div>
     </div>
     <div id="currentOrders" class="currentOrders"> 
         <h3>Current Coffee Orders</h3> 
         <div id="btnRow" class="btnRow">
-        <button id="searchbtn" class="searchbtn">Search Orders</button>
-        <button id="allbtn" class="allbtn"> Show all Orders</button>
+        <button id="searchbtn" class="searchbtn">Find Order</button>
+        <button id="allbtn" class="searchbtn"> Show all Orders</button>
         </div>
         <div id="displayBox" class="displayBox">
     </div>
     <div id="hidding" class="hidding">
         <div id="dialog" class="dialog">
-                <form action="searchCall" id="searchCall">
-                    <Input class="searchBox" id="searchBox" type="text" placeholder="Enter the e-mail address of the order"></Input>
-                    <button class="find"> Find the order </button>
-                </form>
+                
+        </div>
+        
         </div>    
     </div>
 
